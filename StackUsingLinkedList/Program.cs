@@ -58,7 +58,11 @@ namespace StackUsingLinkedList
         {
             Node tmp;
 
-           
+            if (empty())
+            {
+                Console.WriteLine("\nStack empty"):
+            }
+            
         }
     }
     class Program
