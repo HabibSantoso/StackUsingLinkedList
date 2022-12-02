@@ -62,7 +62,14 @@ namespace StackUsingLinkedList
             {
                 Console.WriteLine("\nStack empty"):
             }
-            
+            else
+            {
+                for (tmp = top; tmp != null; tmp = tmp.next)
+                {
+                    Console.WriteLine(tmp.info);
+                }
+                Console.WriteLine();
+            }
         }
     }
     class Program
