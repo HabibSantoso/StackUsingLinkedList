@@ -16,6 +16,11 @@ namespace StackUsingLinkedList
             next = n;
         }
     }
+
+    class Stack
+    {
+
+    }
     class Program
     {
         static void Main(string[] args)
