@@ -19,6 +19,13 @@ namespace StackUsingLinkedList
 
     class Stack
     {
+        Node top;
+
+        public Stack()
+        {
+            top = null;
+        }
+
 
     }
     class Program
