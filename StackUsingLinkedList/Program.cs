@@ -53,6 +53,13 @@ namespace StackUsingLinkedList
             Console.WriteLine("\nThe poped element is: " + top.info);
             top = top.next; // make top point to the next node in sequence
         }
+
+        public void display()
+        {
+            Node tmp;
+
+           
+        }
     }
     class Program
     {
