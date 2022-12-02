@@ -26,7 +26,7 @@ namespace StackUsingLinkedList
             top = null;
         }
 
-        bool empty()
+         public bool empty()
         {
             if (top == null)
             { 
@@ -60,7 +60,7 @@ namespace StackUsingLinkedList
 
             if (empty())
             {
-                Console.WriteLine("\nStack empty"):
+                Console.WriteLine("\nStack empty");
             }
             else
             {
@@ -88,6 +88,30 @@ namespace StackUsingLinkedList
                 Console.Write("\nEnter your choice: ");
                 String sInput = Console.ReadLine();
                 char ch = Convert.ToChar(sInput == "" ? "0" : sInput);
+                switch (ch)
+                {
+                    case '1':
+                        Console.Write("\nEnter a Number: ");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        s.push(num);
+                        break;
+                    case '2':
+                        if (s.empty())
+                        {
+                            Console.WriteLine("\nStack empty");
+                            break;
+                        }
+                        s.pop();
+                        break;
+                    case '3':
+                        s.display();
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid choice");
+                        break;
+                }
             }
         }
     }
