@@ -47,6 +47,12 @@ namespace StackUsingLinkedList
             top = fresh;
             Console.WriteLine("\n" + element + " pushed.");
         }
+
+        public void pop()
+        {
+            Console.WriteLine("\nThe poped element is: " + top.info);
+            top = top.next; // make top point to the next node in sequence
+        }
     }
     class Program
     {
